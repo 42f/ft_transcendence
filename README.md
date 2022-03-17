@@ -1,38 +1,21 @@
 # ft_transcendence
 Web application of an amazing pong game.
 
-## Back end:
+### how to use
 
-### FIRST:
-docker-compose build
-
-
-### Run dev mode for backend/frontend/both:
-docker-compose -f docker-compose.yml -f docker-compose.dev.yml up [--build] [back_end_server|front_end_server]
-
-### Run dev mode with debugger for backend/frontend/both:
-docker-compose -f docker-compose.yml -f docker-compose.debug.yml up [--build] [back_end_server|front_end_server]
-
-### Run end-to-end test mode for backend:
-docker-compose -f docker-compose.yml -f docker-compose.test.yml run back_end_server bash -c 'npm run test:e2ewatch'
-
-
-### Run production mode:
-docker-compose up [--build]
-
-### Documentation for the backend routes:
-http://localhost:3000/api/
+With docker started on your computer, run `make` will build and run containers for both frontend and backend.
+Then go on `http://localhost`
 
 ## Tests
 
-### Test specific unit test
+### Run all end to end tests
 
-For auth.controller:
+`make test`
 
-`docker-compose -f docker-compose.yml -f docker-compose.test.yml run back_end_server bash -c 'jest --watchAll --maxWorkers=1 --testPathPattern=auth.controller'`
+### Run specific end to end tests
 
-With:
-`--testPathPattern=[regex]`
+`make test [name of test file]`
+
 
 ### DEBUG conf to attach vscode to docker container:
 ```
