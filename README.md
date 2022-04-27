@@ -1,5 +1,14 @@
 # ft_transcendence
 Web application of an amazing pong game.
+This is a project made with 4 other students at École 42 Paris: [Jibus22](https://github.com/Jibus22), [kazuumaVII](https://github.com/kazuumaVII), [violettagoldman](https://github.com/violettagoldman), [mrouchy](https://github.com/mrouchy).
+
+It is a fullstack application which allows user to log in with their École 42 Oauth, play a pong game online, watch current games in real time, chat among each other with public, private rooms and direct messages.
+
+### Backend
+The backend consists of a REST Api made with NestJs framework using typescript, a PostgreSQL db, deployed on a docker container.
+
+### Frontend
+The frontend uses React framework.
 
 ### how to use
 
