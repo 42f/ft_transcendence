@@ -98,6 +98,7 @@ export class WsChatHelpers {
             'login',
             'photo_url',
             'status',
+            'game_ws'
           ]);
           break;
 

@@ -166,7 +166,7 @@ describe('CHAT: Moderators', () => {
         );
       })
       .then(async (response) => {
-        expect(response.status).toBe(HttpStatus.FORBIDDEN);
+        expect(response.status).toBe(HttpStatus.NOT_FOUND);
       });
   });
 
@@ -196,7 +196,7 @@ describe('CHAT: Moderators', () => {
         );
       })
       .then(async (response) => {
-        expect(response.status).toBe(HttpStatus.FORBIDDEN);
+        expect(response.status).toBe(HttpStatus.NOT_FOUND);
       });
   });
 
